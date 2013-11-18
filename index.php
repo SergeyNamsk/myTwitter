@@ -28,15 +28,16 @@ $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oau
 //$status = $connection->get('statuses/friends_timeline');
 //$follows = $connection->get('friends/ids');
 //$content_userline=$connection->get('statuses/user_timeline', array('id' => $user_id,'count'=>200));
+
+
 //-----------------------------------------------------------------------------------------------
 // Twitter query picker (test)                                array('since_id'=>1, 'count' => 10)
 // $Object = $ Class -> get ('Method', 'Parameter');
 //-----------------------------------------------------------------------------------------------
 $info = $connection->get('account/verify_credentials');
-
+$backimage = $connection->get('account/update_profile_background_image');
 $content = $connection-> get ('statuses/home_timeline');
 $contents = $connection-> get ('statuses/show');
-
 
 // Get it in a format JSON – treat each tweet
 

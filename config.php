@@ -13,6 +13,11 @@ define("OAUTH_SECRET", "M6SlJ1RPzUS5igK34028zPodvHDvXK7GtBaxvkK0MaPHw");
 define('OAUTH_CALLBACK', 'http://127.0.0.1/mytwitter/callback.php');
 //mysql access
 define( 'MYSQL_HOST', 'localhost' );
-define( 'MYSQL_USERNAME', 'mysql' );
-define( 'MYSQL_PASSWORD', '22162216' );
-define( 'MYSQL_DB_NAME', 'mytwitter' );
+define( 'MYSQL_USERNAME', 'root' );
+define( 'MYSQL_PASSWORD', 'mysql' );
+define( 'MYSQL_DATABASE', 'mytwitter' );
+//---simple :)
+$mysql_database="mytwitter"; 
+$mysql_username="root"; 
+$mysql_password="mysql"; 
+$mysql_host="localhost"; 
